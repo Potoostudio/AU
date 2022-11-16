@@ -732,7 +732,7 @@ const Home = () => {
                   <div className="col-md-5 col-10 px-0 pt-5 mt-md-2 mt-5">
                     <div className="image-container">
                       <Image
-                        src="/Laptop.jpg"
+                        src="/laptop.jpg"
                         layout="fill"
                         className="image"
                         alt="Journey Pictures"
