@@ -817,7 +817,7 @@ const Home = () => {
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '2.9em'}}
+                whileInView= {{letterSpacing: '3.5em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.2},
                 }}
@@ -835,7 +835,7 @@ const Home = () => {
               </div>
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '2.9em'}}
+                whileInView= {{letterSpacing: '3.5em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.3},
                 }}
@@ -877,7 +877,7 @@ const Home = () => {
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '2.9em'}}
+                whileInView= {{letterSpacing: '3.5em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.2},
                 }}
@@ -895,7 +895,7 @@ const Home = () => {
               </div>
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '2.9em'}}
+                whileInView= {{letterSpacing: '3.5em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.3},
                 }}
