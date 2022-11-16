@@ -53,7 +53,7 @@ const Home = () => {
                 src="/Logo.svg"
                 height= {77}
                 width= {322}
-                className="w-75"
+                className="w-100"
                 alt="Project by Potoo Studio"
               />
           </motion.li>
