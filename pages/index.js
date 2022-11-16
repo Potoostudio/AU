@@ -650,7 +650,7 @@ const Home = () => {
               </motion.h1>
             </div>
             <motion.div
-              className="col-md-10 col-11 px-md-5 px-0"
+              className="col-md-10 col-10 px-md-5 px-0"
               whileInView= {{y: 0}}
               transition={{
                 y: { duration: 1.2, repeat: 0, delay: 0.2},
@@ -777,7 +777,7 @@ const Home = () => {
         </div>
         <div className="container-fluid pt-5 mt-md-20p">
           <div className="row pt-5 mt-5 justify-content-around">
-            <div className="col-md-3 col-5 p-4">
+            <div className="col-md-3 col-8 p-4">
               <motion.div
               className="image-container"
               whileInView= {{rotate: 365}}
@@ -817,7 +817,7 @@ const Home = () => {
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3em'}}
+                whileInView= {{letterSpacing: '2.9em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.2},
                 }}
@@ -835,7 +835,7 @@ const Home = () => {
               </div>
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3em'}}
+                whileInView= {{letterSpacing: '2.9em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.3},
                 }}
@@ -877,7 +877,7 @@ const Home = () => {
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3em'}}
+                whileInView= {{letterSpacing: '2.9em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.2},
                 }}
@@ -895,7 +895,7 @@ const Home = () => {
               </div>
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3em'}}
+                whileInView= {{letterSpacing: '2.9em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.3},
                 }}

@@ -241,6 +241,7 @@ a {
     display: inline-flex;
     width: 80%;
     padding-left: 0;
+    list-style: inside;
 
     .item {
       width: 33.333%;
@@ -721,7 +722,7 @@ a {
     float: right;
   }
   .img-title {
-    font-size: calc(0.35rem + 0.75vw);
+    font-size: calc(0.55rem + 0.75vw);
     text-align: center;
     color: #aeaeae;
     font-family: "adobe-garamond-pro";
