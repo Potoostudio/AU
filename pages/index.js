@@ -1001,7 +1001,7 @@ const Home = () => {
            <div className="col-md-3 col-7">
             <div className="image-container">
                 <Image
-                  src="/Potoo-logo.svg"
+                  src="/potoo-logo.svg"
                   layout="fill"
                   className="image pt-5 mt-5"
                   alt="Potoo logo"
