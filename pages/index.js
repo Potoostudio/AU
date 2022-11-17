@@ -6,29 +6,51 @@ import 'pure-react-carousel/dist/react-carousel.es.css'
 import Link from 'next/link'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import IframePlayer from 'player-iframe-video'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Home = () => {
 
   const iFrame = <iframe width="100%" height="100%"
-                         src="https://player.vimeo.com/video/767676233?h=b2086adb80&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1"
-                         frameBorder="0"
-                         allow="autoplay; fullscreen; picture-in-picture"
-                         allowFullScreen
-                         title="test player iframe vimeo" />
+                          src="https://player.vimeo.com/video/767676233?h=b2086adb80&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1"
+                          frameBorder="0"
+                          allow="autoplay; fullscreen; picture-in-picture"
+                          allowFullScreen
+                          title="test player iframe vimeo" />
 
-  
-  const [isOpened, setIsOpened] = useState(false);
-  
-  function toggleVideoCont() {
-    setIsOpened(wasOpened => !wasOpened);
-  }
+    
+    const [isOpened, setIsOpened] = useState(false);
+    
+    function toggleVideoCont() {
+      setIsOpened(wasOpened => !wasOpened);
+    }
 
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001
+    });
+
+
+    // Carousel setting
+    const responsive = {
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+        slidesToSlide: 3 // optional, default to 1.
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+        slidesToSlide: 2 // optional, default to 1.
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+        slidesToSlide: 1 // optional, default to 1.
+      }
+    };
 
 
 
@@ -635,114 +657,152 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid pt-md-5 mt-md-5">
-          <div className="row px-md-5 mx-md-5 justify-content-md-end justify-content-center">
-            <div className="col-12 journey-col">
-              <motion.h1
-                className="sec-title journey"
-                whileInView= {{opacity: 0.2}}
-                transition={{
-                  opacity: { duration: 1.2, repeat: 0,},
-                }}
-                initial={{opacity: 1}}
-              >
-                Journey
-              </motion.h1>
+        <div className="container-fluid pt-md-5 pt-4 mt-5">
+          <div className="row px-md-5 mx-md-5 justify-content-md-around justify-content-center pt-5 mt-5">
+            <div className="col-md-5 col-10 pb-md-0 pt-md-5 mt-md-5">
+              <h1 className="trip-title">
+                My trip home with a
+                stop to explore the past
+              </h1>
+            </div>
+            <div className="col-md-5 col-10 items-bottom pt-4 pt-md-5 mt-md-5">
+              <ul className="trip-list list">
+                <li className="item text-md-center text-left">
+                  Denver
+                </li>
+                <li className="item line text-center">
+                  <motion.span className="line-location"
+                   whileInView= {{left: '94%'}}
+                   transition={{
+                     left: { duration: 2, repeat: 0, delay: 0.8},
+                   }}
+                   initial={{left: '0%'}}
+                  >
+                    &#x2022;
+                    </motion.span>
+                </li>
+                <li className="item text-md-center text-right">
+                  Baghdad
+                </li>
+              </ul>
             </div>
             <motion.div
-              className="col-md-10 col-10 px-md-5 px-0"
+              className="col-md-11 col-10 pr-md-5 px-0 mt-4 lighter-bg"
               whileInView= {{y: 0}}
               transition={{
                 y: { duration: 1.2, repeat: 0, delay: 0.2},
               }}
               initial={{y: 60}}
-            >
-              <div className="journey-box p-md-5 p-2">
-                <div className="row justify-content-around pt-5 mt-5">
-                  <div className="col-md-5 col-10 px-0">
-                    <div className="image-container">
-                      <Image
-                        src="/Ticket.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
-                    </div>
+              >
+              <Carousel
+                  swipeable={true}
+                  slidesToSlide={1}
+                  draggable={true}
+                  responsive={responsive}
+                  ssr={false} // means to render carousel on server-side.
+                  infinite={true}
+                  // minimumTouchDrag={50}
+                  // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                  // autoPlaySpeed={1000}
+                  partialVisible={true}
+                  keyBoardControl={true}
+                  // customTransition="all .5"
+                  // transitionDuration={500}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                  // deviceType={this.props.deviceType}
+                  itemClass=" p-4"
+                  focusOnSelect={true}
+                  >
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/Ticket.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          draggable="false"
+                          />
+                      </div>
                       <p className="image-title pt-2">
                         Denver <span className="date">7.18.2022</span>
                       </p>
-                  </div>
-                  <div className="col-md-5 col-10 px-0 pt-5 mt-5">
-                    <div className="image-container pt-md-5 mt-md-5">
-                      <Image
-                        src="/Tea.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
-                    </div>
-                    <p className="image-title pt-2">
-                    Istanbul <span className="date">7.20.2022</span>
-                    </p>
-                  </div>
-                  <div className="col-md-5 col-10 px-0 pt-5 mt-md-0 mt-5">
-                    <div className="image-container">
-                      <Image
-                        src="/Hamid-pictures.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
-                    </div>
+                     </div>
+                    <div className="container">
+                      <div className="image-container pt-md-5 mt-md-5">
+                        <Image
+                          src="/Tea.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          draggable="false"
+                          />
+                      </div>
                       <p className="image-title pt-2">
-                      Baghdad <span className="date">7.24.2022</span>
+                      Istanbul <span className="date">7.20.2022</span>
                       </p>
-                  </div>
-                  <div className="col-md-5 col-10 px-0 pt-5 mt-5">
-                    <div className="image-container mt-md-5 pt-md-5">
-                      <Image
-                        src="/Coffee.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
-                    </div>
-                     <p className="image-title pt-2">
-                      Baghdad <span className="date">7.26.2022</span>
+                     </div>
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/Hamid-pictures.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          draggable="false"
+                          />
+                      </div>
+                        <p className="image-title pt-2">
+                        Baghdad <span className="date">7.24.2022</span>
+                        </p>
+                     </div>
+                    <div className="container">
+                      <div className="image-container mt-md-5 pt-md-5">
+                        <Image
+                          src="/Coffee.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          draggable="false"
+                          />
+                      </div>
+                      <p className="image-title pt-2">
+                        Baghdad <span className="date">7.26.2022</span>
                       </p>
-                  </div>
-                  <div className="col-md-10 col-10 px-0 pt-5 mt-md-2 mt-5">
-                    <div className="image-container">
-                      <Image
-                        src="/Story-on-table.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
                     </div>
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/Story-on-table.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          draggable="false"
+                          />
+                      </div>
                       <p className="image-title pt-2">
                       Baghdad <span className="date">7.28.2022</span>
                       </p>
-                  </div>
-                  <div className="col-md-5 col-10 px-0 pt-5 mt-md-2 mt-5">
-                    <div className="image-container">
-                      <Image
-                        src="/laptop.jpg"
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
                     </div>
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/laptop.jpg"
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          />
+                      </div>
                       <p className="image-title pt-2">
                       Baghdad <span className="date">8.10.2022</span>
                       </p>
                   </div>
-                  <div className="col-md-5 col-10 px-0 pt-5 mt-5">
+                  <div className="container">
                     <div className="image-container pt-md-5 mt-md-5">
                       <Image
                         src="/Late-work.jpg"
@@ -756,7 +816,7 @@ const Home = () => {
                       Denver <span className="date">8.24.2022</span>
                       </p>
                   </div>
-                  <div className="col-md-5 col-10 px-0 pb-5 mb-4 pt-5 mt-5">
+                  <div className="container">
                     <div className="image-container">
                       <Image
                         src="/Laptop-Denver.jpg"
@@ -770,8 +830,8 @@ const Home = () => {
                       Denver <span className="date">9.26.2022</span>
                       </p>
                   </div>
-                </div>
-              </div>
+
+                </Carousel>
             </motion.div>
           </div>
         </div>
