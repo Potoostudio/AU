@@ -4,14 +4,24 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React, { useEffect } from 'react';
 import Script from 'next/script';
-import Router from 'next/router';
-
+import { motion } from "framer-motion";
 
 
 function MyApp({ Component, pageProps, router }, AppProps) {
 
   return (
-      <>
+      <motion.div
+        initial="initial"
+        animate="animate"
+        variants={{
+            initial: {
+            opacity: 0,
+            },
+            animate: {
+            opacity: 1,
+            },
+        }}
+      >
           <Script id='GA-script' strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
 
           <Script strategy="lazyOnload" id='GA-script-two'>
@@ -31,7 +41,7 @@ function MyApp({ Component, pageProps, router }, AppProps) {
           </Head>
 
           <Component {...pageProps} />
-      </>
+      </motion.div>
   );
 }
 
