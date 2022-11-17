@@ -90,6 +90,16 @@ const Home = () => {
         {isOpened && (
           <div className="videoCont" onClick={toggleVideoCont}>
             <span className="exit"></span>
+            <motion.p
+            className="rotate"
+            whileInView= {{rotate: 90}}
+              transition={{
+                rotate: { duration: 2, repeat: 0, delay: 0.6},
+              }}
+            initial={{rotate: 0}}
+            >
+              Rotate for fullscreen
+            </motion.p>
             <div className="video-wrapper">
               <div className="video-row">
                 <div className="video-box">
@@ -477,6 +487,7 @@ const Home = () => {
                   naturalSlideHeight={50}
                   totalSlides={12}
                   currentSlide={null}
+                  infinite={true}
                 >
                   <Slider>
                     <Slide index={0} className="picture-slider-item">
