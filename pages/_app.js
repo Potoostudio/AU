@@ -24,12 +24,6 @@ function MyApp({ Component, pageProps, router }, AppProps) {
                   });
               `}
           </Script>
-
-          <Head>
-              <title>Welcome!</title>
-              <meta name="viewport" content="initial-scale=1, width=device-width" />
-          </Head>
-
           <Component {...pageProps} />
       </>
   );
