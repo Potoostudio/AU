@@ -192,6 +192,7 @@ a {
     }
   }
   .image-title {
+    font-size: calc(0.5rem + 0.8vw);
 
     .date {
       float: right;
@@ -586,6 +587,7 @@ a {
     }
   }
   .image-title {
+    font-size: calc(0.4rem + 0.5vw);
 
     .date {
       float: right;
@@ -784,6 +786,9 @@ a {
       }
     }
   }
+  .mt-md-10p {
+    margin-top: 10%!important;
+  }
 }
 }
 .italic {
@@ -808,7 +813,7 @@ a {
     font-family: "adobe-garamond-pro";
   }
   .bg-lighter {
-    background-color: #151515;
+    background-color: #0b0b0b;
   }
   .carousel__slider {
     cursor: grab;
@@ -830,4 +835,7 @@ a {
 }
 .mt-md-20p {
   margin-top: 20%!important;
+}
+.cursor-grab {
+  cursor: grab;
 }

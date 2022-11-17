@@ -447,8 +447,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid pt-5">
-          <div className="row px-md-5 mx-md-5 justify-content-center">
+        <div className="container-fluid pt-5 mt-md-5">
+          <div className="row mt-md-5 px-md-5 mx-md-5 justify-content-center">
             <div className="col-md-9 col-11">
               <motion.h1
               className="sec-title album"
@@ -657,8 +657,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid pt-md-5 pt-4 mt-5">
-          <div className="row px-md-5 mx-md-5 justify-content-md-around justify-content-center pt-5 mt-5">
+        <div className="container-fluid pt-md-5 pt-4 mt-md-10p">
+          <div className="row px-md-5 mx-md-5 justify-content-md-around justify-content-center pt-0 mt-2">
             <div className="col-md-5 col-10 pb-md-0 pt-md-5 mt-md-5">
               <h1 className="trip-title">
                 My trip home with a
@@ -687,7 +687,7 @@ const Home = () => {
               </ul>
             </div>
             <motion.div
-              className="col-md-11 col-10 pr-md-5 px-0 mt-4 lighter-bg"
+              className="col-md-11 col-10 pr-md-5 px-0 mt-4 lighter-bg cursor-grab"
               whileInView= {{y: 0}}
               transition={{
                 y: { duration: 1.2, repeat: 0, delay: 0.2},
@@ -711,7 +711,7 @@ const Home = () => {
                   containerClass="carousel-container"
                   removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
                   // deviceType={this.props.deviceType}
-                  itemClass=" p-4"
+                  itemClass=" p-4 cursor-grab"
                   focusOnSelect={true}
                   >
                     <div className="container">
@@ -741,7 +741,7 @@ const Home = () => {
                           />
                       </div>
                       <p className="image-title pt-2">
-                      Istanbul <span className="date">7.20.2022</span>
+                        Istanbul <span className="date">7.20.2022</span>
                       </p>
                      </div>
                     <div className="container">
@@ -801,42 +801,67 @@ const Home = () => {
                       <p className="image-title pt-2">
                       Baghdad <span className="date">8.10.2022</span>
                       </p>
-                  </div>
-                  <div className="container">
-                    <div className="image-container pt-md-5 mt-md-5">
-                      <Image
-                        src="/Late-work.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
                     </div>
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/Hamid-letter.jpg"
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          />
+                      </div>
+                      <p className="image-title pt-2">
+                        Baghdad <span className="date">8.12.2022</span>
+                      </p>
+                    </div>
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/Turkish-chai.jpg"
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          />
+                      </div>
+                      <p className="image-title pt-2">
+                        Istanbul <span className="date">8.19.2022</span>
+                      </p>
+                    </div>
+                    <div className="container">
+                      <div className="image-container pt-md-5 mt-md-5">
+                        <Image
+                          src="/Late-work.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          />
+                      </div>
                       <p className="image-title pt-2">
                       Denver <span className="date">8.24.2022</span>
                       </p>
-                  </div>
-                  <div className="container">
-                    <div className="image-container">
-                      <Image
-                        src="/Laptop-Denver.jpg"
-                        loading='lazy'
-                        layout="fill"
-                        className="image"
-                        alt="Journey Pictures"
-                        />
                     </div>
-                      <p className="image-title pt-2">
-                      Denver <span className="date">9.26.2022</span>
-                      </p>
-                  </div>
-
+                    <div className="container">
+                      <div className="image-container">
+                        <Image
+                          src="/Laptop-Denver.jpg"
+                          loading='lazy'
+                          layout="fill"
+                          className="image"
+                          alt="Journey Pictures"
+                          />
+                      </div>
+                        <p className="image-title pt-2">
+                        Denver <span className="date">9.26.2022</span>
+                        </p>
+                    </div>
                 </Carousel>
             </motion.div>
           </div>
         </div>
-        <div className="container-fluid pt-5 mt-md-20p">
-          <div className="row pt-5 mt-5 justify-content-around">
+        <div className="container-fluid pt-5 mt-md-20p pb-5 mb-5">
+          <div className="row py-5 my-5 justify-content-around">
             <div className="col-md-3 col-8 p-4">
               <motion.div
               className="image-container"
@@ -872,7 +897,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid bg-lighter pt-1 mt-md-20p mt-40p">
+        <div className="container-fluid bg-lighter py-5 mt-md-20p mt-40p">
           <div className="row pt-md-5 pb-lg-0  py-md-5 justify-content-md-around justify-content-center mx-md-5 mx-0 px-md-5 px-0">
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
@@ -966,8 +991,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid pt-5 mt-5">
-          <div className="row pt-5 mt-5">
+        <div className="container-fluid pt-5 mt-5 mt-md-10p mb-md-5 pb-md-5">
+          <div className="row py-5 mt-5">
             <div className="col-12 px-0 text-center pt-5 mt-5">
               <h1 className="influence-h1  mt-5">
                 Project made under the influence of
@@ -984,7 +1009,7 @@ const Home = () => {
                   Oud Music
                 </li>
                 <li className="item">
-                  Coffee
+                  Tea (Chai)
                 </li>
                 <li className="item">
                   Traveling
@@ -993,8 +1018,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid pt-5 mt-5">
-          <div className="row pt-5 mt-5 justify-content-center">
+        <div className="container-fluid pt-5 mt-5 mb-md-5 pb-md-5">
+          <div className="row pt-5 mt-5 justify-content-center mb-md-5 pb-md-5">
            <motion.div
             className="col-md-3 col-10 pt-md-5 mt-5"
             whileInView= {{x: 0}}
