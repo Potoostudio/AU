@@ -347,6 +347,9 @@ a {
       }
     }
   }
+  .bg-lighter {
+    border: 0px solid #3c3c3c;
+  }
   .trip-title {
     font-size: calc(1rem + 4.2vw);
     font-family: adobe-garamond-pro;
@@ -389,7 +392,7 @@ a {
     }
   }
   .lighter-bg {
-    border: 1px solid #606060;
+    border-bottom: 1px solid #606060;
     background-color: #000;
   }
 }
@@ -787,6 +790,9 @@ a {
   .mt-md-10p {
     margin-top: 10%!important;
   }
+  .bg-lighter {
+    border: 1px solid #3c3c3c;
+  }
 }
 }
 .italic {
@@ -812,7 +818,6 @@ a {
   }
   .bg-lighter {
     background-color: #0b0b0b;
-    border: 1px solid #3c3c3c;
   }
   .carousel__slider {
     cursor: grab;
