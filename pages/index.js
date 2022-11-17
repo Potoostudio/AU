@@ -475,17 +475,17 @@ const Home = () => {
                 <CarouselProvider
                   naturalSlideWidth={100}
                   naturalSlideHeight={50}
-                  totalSlides={11}
+                  totalSlides={12}
                   currentSlide={null}
                 >
                   <Slider>
                     <Slide index={0} className="picture-slider-item">
-                      <div className="row">
+                    <div className="row">
                        <div className="col-11">
                         <div className="image-container">
-                          <p className="img-title">Hamid (bottom right)</p>
+                        <p className="img-title">Hamid (3rd from top right)</p>
                           <Image
-                            src="/group-photo.jpg"
+                            src="/School-Picture.jpg"
                             layout="fill"
                             className="image"
                             alt="Abdulhamid Pictures"
@@ -498,11 +498,11 @@ const Home = () => {
                       <div className="row">
                        <div className="col-11">
                         <div className="image-container">
-                        <p className="img-title">Hamid (Iran-Iraq War)</p>
+                          <p className="img-title">Hamid (bottom right)</p>
                           <Image
-                            src="/Army-Picture.jpg"
+                            src="/group-photo.jpg"
                             layout="fill"
-                            className="image mh-500"
+                            className="image"
                             alt="Abdulhamid Pictures"
                             />
                         </div>
@@ -526,26 +526,26 @@ const Home = () => {
                     </Slide>
                     <Slide index={3} className="picture-slider-item">
                       <div className="row">
-                       <div className="col-11">
-                        <div className="image-container">
-                        <p className="img-title">Hamid (Gulf War)</p>
-                          <Image
-                            src="/Hamid-in-War.jpg"
-                            layout="fill"
-                            className="image"
-                            alt="Abdulhamid Pictures"
-                            />
+                        <div className="col-11">
+                          <div className="image-container">
+                          <p className="img-title">Hamid (left), Shakir (center), Mardan (right)</p>
+                            <Image
+                              src="/Pic-with-Mardan.jpg"
+                              layout="fill"
+                              className="image"
+                              alt="Abdulhamid Pictures"
+                              />
+                          </div>
                         </div>
-                       </div>
-                      </div>
+                        </div>
                     </Slide>
                     <Slide index={4} className="picture-slider-item">
                       <div className="row">
                        <div className="col-11">
                         <div className="image-container">
-                        <p className="img-title">Hamid (left), Shakir (center), Mardan (right)</p>
+                        <p className="img-title">Hamid (Gulf War)</p>
                           <Image
-                            src="/Pic-with-Mardan.jpg"
+                            src="/Hamid-in-War.jpg"
                             layout="fill"
                             className="image"
                             alt="Abdulhamid Pictures"
@@ -573,9 +573,9 @@ const Home = () => {
                       <div className="row">
                        <div className="col-11">
                         <div className="image-container">
-                        <p className="img-title">Hamid (3rd from top right)</p>
+                        <p className="img-title">Hamid (right)</p>
                           <Image
-                            src="/School-Picture.jpg"
+                            src="/Abdulhamid-3.jpg"
                             layout="fill"
                             className="image"
                             alt="Abdulhamid Pictures"
@@ -603,9 +603,9 @@ const Home = () => {
                       <div className="row">
                        <div className="col-11">
                         <div className="image-container">
-                        <p className="img-title">Hamid (1990)</p>
+                        <p className="img-title">Hamid with his nephews</p>
                           <Image
-                            src="/Abdulhamid-1.jpg"
+                            src="/Picture-with-Kids-2.jpg"
                             layout="fill"
                             className="image mh-500"
                             alt="Abdulhamid Pictures"
@@ -620,7 +620,7 @@ const Home = () => {
                         <div className="image-container">
                         <p className="img-title">Hamid (right)</p>
                           <Image
-                            src="/Abdulhamid-3.jpg"
+                            src="/Abdulhamid-6.jpg"
                             layout="fill"
                             className="image"
                             alt="Abdulhamid Pictures"
@@ -636,6 +636,21 @@ const Home = () => {
                         <p className="img-title">Hamid (1990)</p>
                           <Image
                             src="/Abdulhamid-4.jpg"
+                            layout="fill"
+                            className="image"
+                            alt="Abdulhamid Pictures"
+                            />
+                        </div>
+                       </div>
+                      </div>
+                    </Slide>
+                    <Slide index={11} className="picture-slider-item">
+                      <div className="row">
+                       <div className="col-11">
+                        <div className="image-container">
+                        <p className="img-title">Hamid (1990)</p>
+                          <Image
+                            src="/Abdulhamid-5.jpg"
                             layout="fill"
                             className="image"
                             alt="Abdulhamid Pictures"
@@ -860,8 +875,8 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-        <div className="container-fluid pt-5 mt-md-20p pb-5 mb-5">
-          <div className="row py-5 my-5 justify-content-around">
+        <div className="container-fluid pt-5 pt-md-0 mt-md-20p pb-5 mb-5">
+          <div className="row py-5 my-5 pt-md-0 justify-content-around">
             <div className="col-md-3 col-8 p-4">
               <motion.div
               className="image-container"
@@ -897,12 +912,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid bg-lighter py-5 mt-md-20p mt-40p">
+        <div className="container-fluid bg-lighter py-5pt-md-0 mt-md-10p mt-40p">
           <div className="row pt-md-5 pb-lg-0  py-md-5 justify-content-md-around justify-content-center mx-md-5 mx-0 px-md-5 px-0">
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3.5em'}}
+                whileInView= {{letterSpacing: '3em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.2},
                 }}
@@ -920,7 +935,7 @@ const Home = () => {
               </div>
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3.5em'}}
+                whileInView= {{letterSpacing: '3em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.3},
                 }}
@@ -962,7 +977,7 @@ const Home = () => {
             <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3.5em'}}
+                whileInView= {{letterSpacing: '3em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.2},
                 }}
@@ -980,7 +995,7 @@ const Home = () => {
               </div>
               <motion.p
                 className="war-year my-0"
-                whileInView= {{letterSpacing: '3.5em'}}
+                whileInView= {{letterSpacing: '3em'}}
                 transition={{
                   letterSpacing: { duration: 1, repeat: 0, delay: 0.3},
                 }}
@@ -998,7 +1013,7 @@ const Home = () => {
                 Project made under the influence of
               </h1>
               <motion.ul
-                className="list influence-list pt-3"
+                className="list influence-list pt-4"
                 whileInView= {{y: 0}}
                 transition={{
                   y: { duration: 1.2, repeat: 0, delay: 0.2},
