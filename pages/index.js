@@ -886,8 +886,9 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-        <div className="container-fluid pt-5 pt-md-0 mt-md-20p pb-5 mb-5">
+        <div className="container pt-5 pt-md-0 mt-md-20p pb-5 mb-5">
           <div className="row py-5 my-5 pt-md-0 justify-content-around">
+            {/* <div className="col-md-1"></div> */}
             <div className="col-md-3 col-8 p-4">
               <motion.div
               className="image-container"
@@ -905,7 +906,8 @@ const Home = () => {
                   />
               </motion.div>
             </div>
-            <div className="col-md-7 col-10 px-0 text-center">
+            {/* <div className="col-md-1"></div> */}
+            <div className="col-md-4 col-10 px-0 text-center">
               <motion.div
               className="image-container"
                whileInView= {{scale: 1}}
@@ -914,13 +916,14 @@ const Home = () => {
                }}
                initial={{scale: 0.75}}>
                 <Image
-                  src="/Arabic-abdulhamid.svg"
+                  src="/Hamid-name-arabic.svg"
                   layout="fill"
                   className="image"
                   alt="Abdulhamid Pictures"
                   />
               </motion.div>
             </div>
+            {/* <div className="col-md-1"></div> */}
           </div>
         </div>
         <div className="container-fluid bg-lighter py-5pt-md-0 mt-md-10p mt-40p">
