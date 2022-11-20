@@ -12,7 +12,7 @@ import 'react-multi-carousel/lib/styles.css';
 const Home = () => {
 
   const iFrame = <iframe width="100%" height="100%"
-                          src="https://player.vimeo.com/video/767676233?h=b2086adb80&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1"
+                          src="https://player.vimeo.com/video/772922513?h=b2086adb80&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1"
                           frameBorder="0"
                           allow="autoplay; fullscreen; picture-in-picture"
                           allowFullScreen
@@ -179,18 +179,19 @@ const Home = () => {
                        </div>
                        <div className="col-11">
                          <p className="copy-text pt-4">
-                          His youth was spent with 4 brothers and a sister in
-                          the Marshlands of Southern Iraq, the land of the
-                          tall green reed, the curved horns water buffalos, and
-                          the winter visitors of migratory birds.
+                         His youth was spent with 4 brothers and a
+                        sister in the Marshlands of Southern Iraq,
+                        the land of the tall green reed, the water
+                        buffalos, and the winter home to migratory
+                        birds.
                          </p>
                          <p className="copy-text pt-2">
-                          The shiest boy in the school picture was also the
-                          shiest in life.
+                         Like the marshlands, <span className="italic">Hamid </span> had a quiet nature.
                          </p>
                          <p className="copy-text pt-2">
-                          A Sibha in hand, was the clue to spot <span className="italic">Hamid </span>
-                           from many. His love of Sibha grew into a collection. <br/>
+                         He found comfort carrying a Sibha in hand. 
+                        It was a clue to spot <span className="italic">Hamid </span> from many. His
+                        love of Sibha grew into a collection.
                           <span className="small-text"> Sibha is used culturally to reduce stress or as an indication of status in society</span>
                          </p>
                        </div>
@@ -208,13 +209,13 @@ const Home = () => {
                         </div>
                         <div className="col-11">
                           <p className="copy-text pt-4">
-                            As he turned 18, the quiet Marshes nights began
-                            to have a strange sound, the sound of war.
+                            As he turned 18, the quiet Marshes became home to
+                            a strange sound, the sound of war.
                             </p>
                           <p className="copy-text pt-2">
-                            The scent of the war displaced the odor of the
-                            Marshes. The Marshlands were no more a stop for
-                            bird migration.
+                            The scent of the Marshes was quickly replaced by
+                            the odor of gunpowder. The birds chose new lands
+                            to spend their winter.
                           </p>
                           <p className="copy-text text-center pt-2">
                             The sense of peace was gone
@@ -379,9 +380,9 @@ const Home = () => {
                           <p className="copy-text pt-2">
                             -Nighttime, February 26<sup>th</sup> <br />
                             Coalition air strikes targeted them for 2 nights as
-                            they left Kuwait along highway 80, which was then named <br/>
-                            <span className="underline italic bold"> Highway of Death</span>,
-                            <span className="small-text"> Referring to the high number of casualties.</span>
+                            they left Kuwait along highway 80, commonly referred
+                            to as the <br/>
+                            <span className="underline bold"> Highway of Death</span>.
                           </p>
                           <p className="copy-text pt-2 text-center">
                             <s>Another war was over</s>
@@ -401,9 +402,9 @@ const Home = () => {
                         </div>
                         <div className="col-11">
                           <p className="copy-text pt-4">
-                            <span className="italic">Naif &nbsp;</span>was injured in one of the air attacks. While
-                            everyone was looking for shelter. <span className="italic">Hamid</span> carried <span className="italic">Naif &nbsp;</span>
-                            on his right shoulder and walked to a rusty oil pipe.
+                            <span className="italic">Naif &nbsp;</span>was injured in one of the air attacks. <span className="italic">Hamid &nbsp;</span> 
+                            carried his injured friend on his right shoulder
+                            towards a rusty oil pipe, a small beacon of shelter.
                           </p>
                           <p className="copy-text pt-2">
                             Halfway there, an air attack killed both men.
@@ -433,8 +434,8 @@ const Home = () => {
                             <span className="italic">Najlaa</span> gave birth to a boy named <span className="italic">Ahmed</span> on August 24<sup>th</sup>
                           </p>
                           <p className="copy-text pt-2">
-                            <span className="italic">War</span> made a friend of <span className="italic">Hamid &nbsp;</span>but stopped him from
-                            standing as a father.
+                            War illustrated <span className="ital">Hamid’s&nbsp;</span> loyalty as a friend, but
+                            robbed his wife of a husband and his son of a father.
                           </p>
                           <p className="copy-text pt-2">
                             Neither <span className="italic">Hamid</span> nor his son <span className="italic">Ahmed &nbsp;</span>had the chance to see
@@ -888,7 +889,6 @@ const Home = () => {
         </div>
         <div className="container pt-5 pt-md-0 mt-md-20p pb-5 mb-5">
           <div className="row py-5 my-5 pt-md-0 justify-content-around">
-            {/* <div className="col-md-1"></div> */}
             <div className="col-md-3 col-8 p-4">
               <motion.div
               className="image-container"
@@ -906,7 +906,6 @@ const Home = () => {
                   />
               </motion.div>
             </div>
-            {/* <div className="col-md-1"></div> */}
             <div className="col-md-4 col-10 px-0 text-center">
               <motion.div
               className="image-container"
@@ -923,12 +922,11 @@ const Home = () => {
                   />
               </motion.div>
             </div>
-            {/* <div className="col-md-1"></div> */}
           </div>
         </div>
         <div className="container-fluid bg-lighter py-5pt-md-0 mt-md-10p mt-40p">
           <div className="row pt-md-5 pb-lg-0  py-md-5 justify-content-md-around justify-content-center mx-md-5 mx-0 px-md-5 px-0">
-            <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
+            <div className="col-md-3 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
                 whileInView= {{letterSpacing: '3em'}}
@@ -988,7 +986,7 @@ const Home = () => {
                   u</motion.span>lhamid
               </p>
             </div>
-            <div className="col-md-2 col-7 pt-md-4 py-3 py-md-0">
+            <div className="col-md-3 col-7 pt-md-4 py-3 py-md-0">
               <motion.p
                 className="war-year my-0"
                 whileInView= {{letterSpacing: '3em'}}
