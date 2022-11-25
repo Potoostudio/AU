@@ -888,25 +888,80 @@ const Home = () => {
           </div>
         </div>
         <div className="container pt-5 pt-md-0 mt-md-20p pb-5 mb-5">
-          <div className="row py-5 my-5 pt-md-0 justify-content-around">
-            <div className="col-md-3 col-8 p-4">
-              <motion.div
-              className="image-container"
-              whileInView= {{rotate: 365}}
-                transition={{
-                  rotate: { duration: 6, repeat: 0, delay: 0.1},
-                }}
-                initial={{rotate: 280}}
-              >
-                <Image
-                  src="/Names-years-lime.svg"
-                  layout="fill"
-                  className="image"
-                  alt="Abdulhamid Pictures"
-                  />
-              </motion.div>
+          <div className="row">
+            <div className="col-11 text-left">
+                <h1 className="font-weight-bold">Timeline</h1>
             </div>
-            <div className="col-md-4 col-10 px-0 text-center">
+          </div>
+          <div className="row pt-3 pt-md-0 pb-5 my-5 pt-md-0 justify-content-around row-timeline">
+            <div className="col-md-1 col-4">
+              <ul className="list pl-0 list-style-none">
+                  <li className="item lime small-text">
+                      1962
+                  </li>
+                  <li className="item"><h4 className="font-weight-bold">Birth</h4></li>
+              </ul>
+            </div>
+              <div className="col-md-1 col-4">
+                <ul className="list pl-0 list-style-none">
+                    <li className="item small-text">
+                        1978
+                    </li>
+                    <li className="item"><h4 className="font-weight-bold">Youth</h4></li>
+                </ul>
+              </div>
+              <div className="col-md-1 col-4">
+                <ul className="list pl-0 list-style-none">
+                    <li className="item small-text">
+                        1980
+                    </li>
+                    <li className="item"><h4 className="font-weight-bold">War</h4></li>
+                </ul>
+              </div>
+              <div className="col-md-3 col-10 pt-4 pt-md-0 pb-5 pb-md-0">
+                <motion.div
+                  className="image-container"
+                  whileInView= {{rotate: 365}}
+                    transition={{
+                      rotate: { duration: 6, repeat: 0, delay: 0.1},
+                    }}
+                    initial={{rotate: 280}}
+                  >
+                  <Image
+                    src="/Names-years-lime.svg"
+                    layout="fill"
+                    className="image"
+                    alt="Abdulhamid Pictures"
+                    />
+                </motion.div>
+              </div>
+              <div className="col-md-1 col-4">
+                <ul className="list pl-0 list-style-none">
+                    <li className="small-text item">
+                        1988
+                    </li>
+                    <li className="item"><h4 className="font-weight-bold">Peace</h4></li>
+                </ul>
+              </div>
+              <div className="col-md-1 col-4">
+                <ul className="list pl-0 list-style-none">
+                    <li className="item small-text">
+                        1990
+                    </li>
+                    <li className="item"><h4 className="font-weight-bold">War</h4></li>
+                </ul>
+              </div>
+              <div className="col-md-1 col-4">
+                <ul className="list pl-0 list-style-none">
+                    <li className="small-text item">
+                        1991
+                    </li>
+                    <li className="item"><h4 className="font-weight-bold">Passing</h4></li>
+                </ul>
+              </div>
+          </div>
+          <div className="row py-5 my-5  justify-content-center">
+            <div className="col-8 col-md-6 px-0 py-5 my-5 text-center">
               <motion.div
               className="image-container"
                whileInView= {{scale: 1}}
@@ -1054,7 +1109,7 @@ const Home = () => {
               x: { duration: 1.2, repeat: 0, delay: 0.4},
             }}
             initial={{x: -50}}
-          >
+            >
               <ul className="list-project-info list px-md-5 pt-5 mt-5">
                  <span className="bb">Photographic</span>
 
