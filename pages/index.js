@@ -138,9 +138,9 @@ const Home = () => {
             <div className="col-md-9 col-12">
               <motion.h1
                 className="sec-title"
-                whileInView= {{opacity: 0.15}}
+                whileInView= {{opacity: 0.23}}
                 transition={{
-                  opacity: { duration: 2, repeat: 0},
+                  opacity: { duration: 1, repeat: 0},
                 }}
                 initial={{opacity: 1}}
               >
@@ -153,9 +153,9 @@ const Home = () => {
               <motion.ul className="copy-list list"
                 whileInView= {{y: 0}}
                 transition={{
-                  y: { duration: 1.2, repeat: 0, delay: 0.2},
+                  y: { duration: 0.8, repeat: 0, delay: 0.1},
                 }}
-                initial={{y: 60}}
+                initial={{y: 35}}
               >
                 <li className="copy-item item"
                  >
@@ -465,9 +465,9 @@ const Home = () => {
               className="sec-title album"
               whileInView= {{x: 0}}
               transition={{
-                x: { duration: 1.2, repeat: 0,},
+                x: { duration: 0.8, repeat: 0},
               }}
-              initial={{x: -100}}
+              initial={{x: -50}}
               >
                 Album
               </motion.h1>
@@ -478,9 +478,9 @@ const Home = () => {
               <motion.ul className="copy-list list"
               whileInView= {{y: 0}}
               transition={{
-                y: { duration: 1.2, repeat: 0, delay: 0.2},
+                y: { duration: 0.8, repeat: 0, delay: 0.1},
               }}
-              initial={{y: 60}}
+              initial={{y: 35}}
               >
                 <li className="copy-item item">
                 <CarouselProvider
@@ -717,9 +717,9 @@ const Home = () => {
               className="col-md-11 col-10 pr-md-5 px-0 mt-4 lighter-bg cursor-grab"
               whileInView= {{y: 0}}
               transition={{
-                y: { duration: 1.2, repeat: 0, delay: 0.2},
+                y: { duration: 0.8, repeat: 0, delay: 0.2},
               }}
-              initial={{y: 60}}
+              initial={{y: 35}}
               >
               <Carousel
                   swipeable={true}
@@ -1106,7 +1106,7 @@ const Home = () => {
             className="col-md-3 col-10 pt-md-5 mt-5"
             whileInView= {{x: 0}}
             transition={{
-              x: { duration: 1.2, repeat: 0, delay: 0.4},
+              x: { duration: 1, repeat: 0, delay: 0.2},
             }}
             initial={{x: -50}}
             >
@@ -1131,7 +1131,7 @@ const Home = () => {
            className="col-md-3 col-10 pt-md-5 mt-md-5"
            whileInView= {{x: 0}}
             transition={{
-              x: { duration: 1.2, repeat: 0, delay: 0.4},
+              x: { duration: 1, repeat: 0, delay: 0.2},
             }}
             initial={{x: 50}}
            >
